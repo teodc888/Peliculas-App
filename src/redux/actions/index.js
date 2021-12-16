@@ -14,7 +14,7 @@ export function getMovies(titulo) {
   return async function (dispatch) {
     try {
       let res = await axios(
-        `http://www.omdbapi.com/?apikey=${apikey}&s=${titulo}`
+        `https://www.omdbapi.com/?apikey=${apikey}&s=${titulo}`
       );
 
       return dispatch({
@@ -45,7 +45,7 @@ export function detailMovie(idMovie) {
   return async function (dispatch) {
     try {
       let res = await axios(
-        `http://www.omdbapi.com/?apikey=${apikey}&i=${idMovie}`
+        `https://www.omdbapi.com/?apikey=${apikey}&i=${idMovie}`
       );
       return dispatch({
         type: DETAIL_MOVIE,

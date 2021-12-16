@@ -7,10 +7,9 @@ import Store from "./redux/store/index";
 import { PersistGate } from "redux-persist/integration/react";
 import { BrowserRouter } from 'react-router-dom';
 import Container from '@mui/material/Container';
-
+// import dotenv from "dotenv";
 const { persistor, store } = Store;
-
-
+// dotenv.config();
 //persistor.purge();
 
 ReactDOM.render(

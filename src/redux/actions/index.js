@@ -8,11 +8,13 @@ import {
 
 } from "./actionTypes";
 
+
+const apikey = process.env.REACT_APP_API_KEY;
 export function getMovies(titulo) {
   return async function (dispatch) {
     try {
       let res = await axios(
-        `http://www.omdbapi.com/?apikey=9b3dccb0&s=${titulo}`
+        `http://www.omdbapi.com/?apikey=${apikey}&s=${titulo}`
       );
 
       return dispatch({
@@ -43,7 +45,7 @@ export function detailMovie(idMovie) {
   return async function (dispatch) {
     try {
       let res = await axios(
-        `http://www.omdbapi.com/?apikey=9b3dccb0&i=${idMovie}`
+        `http://www.omdbapi.com/?apikey=${apikey}&i=${idMovie}`
       );
       return dispatch({
         type: DETAIL_MOVIE,

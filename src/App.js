@@ -8,6 +8,8 @@ import Detail from "./components/detail/detail";
 import About from './components/about/about';
 function App() {
   const [titulo, setTitulo] = useState("");
+
+
   return (
     <div className="App">
       <NavBar titulo={titulo} />

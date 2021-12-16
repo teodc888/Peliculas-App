@@ -8,8 +8,7 @@ import Stack from "@mui/material/Stack";
 export default function Home(props) {
     const movies = useSelector(state => state.movies);
     // props.setTitulo("DELLACQUA MOVIES");
-
-    console.log(movies.Search.length);
+    
   return (
     <div>
       <div>

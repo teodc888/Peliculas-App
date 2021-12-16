@@ -1,4 +1,4 @@
-import {GET_MOVIES, ADD_MOVIES_FAVORITE, DELETE_MOVIES_FAVORITE,DETAIL_MOVIE} from "../actions/actionTypes";
+import {GET_MOVIES, ADD_MOVIES_FAVORITE, DELETE_MOVIES_FAVORITE,DETAIL_MOVIE, DELETE_ALL_FAVORITE} from "../actions/actionTypes";
 
 const initialState = {
     movies: [],
@@ -27,6 +27,11 @@ export default function rootReducer(state = initialState, action) {
             return {
                 ...state,
                 movie: action.payload
+            };
+        case DELETE_ALL_FAVORITE:
+            return {
+                ...state,
+                moviesFavorite: action.payload
             };
         default:
             return state;

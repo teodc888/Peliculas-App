@@ -30,7 +30,7 @@ export default function SearchBar() {
             type='text'
             name='text'
             value={movies}
-            placeholder="pelicula..."
+            placeholder="SEARCH..."
             onChange={e=>handleInputChange(e)}
             sx={{bgcolor:"#e1bee7", borderColor:"black", width:"100%", borderRadius:"10px", color:"black"}}
             />

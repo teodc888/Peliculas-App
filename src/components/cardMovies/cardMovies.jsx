@@ -16,13 +16,16 @@ import { Link } from "react-router-dom";
 export default function CardMovies(props) {
   const dispatch = useDispatch();
 
-  const movies = useSelector((state) => state.movies);
+  const movies = useSelector((state) => state.moviesFavorite);
   // let [checked, setChecked] = React.useState(idFav?.includes(props.id) ? true : false);
 
-  const aux = movies.Search.map((el) => el.imdbID);
+  const aux = movies.map((movie) => movie.imdbID);
+
+
+
 
   const [checked, setChecked] = useState(
-    aux?.includes(props.imdbID) ? false : true
+    aux?.includes(props.imdbID) ? true : false
   );
 
   const handleChange = (event) => {
@@ -44,7 +47,7 @@ export default function CardMovies(props) {
 
   return (
     <Stack direction="column" alignItems="center" justifyContent="center">
-      <Card sx={{ maxWidth: 445, borderRadius:"30px" }}>
+      <Card sx={{ maxWidth: 445, borderRadius:"30px", bgcolor:"#e1bee7" }}>
         <Link to={`/movies/${props.imdbID}`}>
           <CardMedia
             component="img"
@@ -56,9 +59,6 @@ export default function CardMovies(props) {
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {props.Title}
-          </Typography>
-          <Typography variant="h6" component="div">
-            {props.Type}
           </Typography>
           <Typography variant="h6" component="div">
             {props.Year}

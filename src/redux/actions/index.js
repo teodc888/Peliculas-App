@@ -4,6 +4,8 @@ import {
   ADD_MOVIES_FAVORITE,
   DELETE_MOVIES_FAVORITE,
   DETAIL_MOVIE,
+  DELETE_ALL_FAVORITE,
+
 } from "./actionTypes";
 
 export function getMovies(titulo) {
@@ -50,5 +52,12 @@ export function detailMovie(idMovie) {
     } catch (error) {
       console.log(error);
     }
+  };
+}
+
+export function deleteAllFavorite() {
+  return {
+    type: DELETE_ALL_FAVORITE,
+    payload: [],
   };
 }

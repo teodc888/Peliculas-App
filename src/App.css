@@ -42,3 +42,10 @@
 .Inicio{
   font-family: 'Hind Siliguri', sans-serif;
 }
+
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}

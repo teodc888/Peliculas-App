@@ -10,7 +10,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Foto from "../../imagenes/miFOto.jpeg";
 export default function About(props) {
-    // props.setTitulo("ABOUT ME");
+    props.MTitulo("ABOUT ME");
   return (
     <div>
       <Stack

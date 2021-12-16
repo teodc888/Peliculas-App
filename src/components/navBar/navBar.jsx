@@ -38,16 +38,16 @@ export default function NavBar(props) {
             </Link>
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, textDecoration:"none" }}>
-            {/* {
+            {
             props.titulo === "DELLACQUA MOVIES" ?
             <Link to="/about">
               {props.titulo}
             </Link> :
             props.titulo
-            } */}
-            <Link to="/about">
+            }
+            {/* <Link to="/about">
             DELLACQUA MOVIES
-            </Link> 
+            </Link>  */}
           </Typography>
           <IconButton
             size="large"

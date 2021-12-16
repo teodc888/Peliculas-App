@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import Stack from "@mui/material/Stack";
 export default function Home(props) {
     const movies = useSelector(state => state.movies);
-    // props.setTitulo("DELLACQUA MOVIES");
+     props.MTitulo("DELLACQUA MOVIES");
     
   return (
     <div>

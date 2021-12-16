@@ -22,7 +22,7 @@ export default function Detail(props) {
   }, [dispatch, id]);
 
   const movie = useSelector((state) => state.movie);
-  // props.setTitulo(movie.Title);
+   props.MTitulo(movie.Title)
 
   return (
     <div>

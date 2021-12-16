@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import SearchBar from "../searchBar/searchBar";
@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import Stack from "@mui/material/Stack";
 export default function Home(props) {
     const movies = useSelector(state => state.movies);
-    props.setTitulo("DELLACQUA MOVIES");
+    // props.setTitulo("DELLACQUA MOVIES");
 
     console.log(movies.Search.length);
   return (
@@ -33,7 +33,7 @@ export default function Home(props) {
           {
               movies && movies.Search && movies.Search.map(movie => {
                   return(
-                    <Grid item xs={4} sm={4} md={4} >
+                    <Grid item xs={4} sm={4} md={4} key={movie.imdbID} >
                         <CardMovies 
                            Title={movie.Title}
                            Type={movie.Type}

@@ -12,10 +12,10 @@ function App() {
     <div className="App">
       <NavBar titulo={titulo} />
       <Routes>
-        <Route exact path='/' element={<Home  setTitulo={setTitulo}/>} />
-        <Route path='/favoritos' element={<Favorite setTitulo={setTitulo} />} />
-        <Route path='/movies/:id' element={<Detail  setTitulo={setTitulo}/>} />
-        <Route path='/about' element={<About  setTitulo={setTitulo}/>} />
+        <Route exact path='/' element={<Home  />} />
+        <Route path='/favoritos' element={<Favorite  />} />
+        <Route path='/movies/:id' element={<Detail  />} />
+        <Route path='/about' element={<About />} />
       </Routes>
     </div>
   );

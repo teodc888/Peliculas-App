@@ -10,7 +10,7 @@ import Stack from "@mui/material/Stack";
 export default function Favorite(props) {
   const dispatch = useDispatch();
   const moviesFavorite = useSelector((state) => state.moviesFavorite);
-  props.setTitulo("FAVORITE MOVIES");
+  // props.setTitulo("FAVORITE MOVIES");
 
  const deleteAll = () => {
     dispatch(deleteAllFavorite());
@@ -43,7 +43,7 @@ export default function Favorite(props) {
           ) : (
             moviesFavorite.map((movie) => {
               return (
-                <Grid item xs={4} sm={4} md={4}>
+                <Grid item xs={4} sm={4} md={4} key={movie.imdbID}>
                   <CardMovies
                     Title={movie.title}
                     Type={movie.type}

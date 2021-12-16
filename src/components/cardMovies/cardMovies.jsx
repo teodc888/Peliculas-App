@@ -45,6 +45,11 @@ export default function CardMovies(props) {
     }
   };
 
+  const handleClick = () => {
+    dispatch(deleteMoviesFavorite(props.imdbID))
+  }
+
+
   return (
     <Stack direction="column" alignItems="center" justifyContent="center">
       <Card sx={{ maxWidth: 445, borderRadius:"30px", bgcolor:"#e1bee7" }}>
@@ -73,9 +78,10 @@ export default function CardMovies(props) {
               checkedIcon={<Favorite />}
             />
           ) : (
-            <IconButton>
+            <IconButton
+            onClick={handleClick}>
               <DeleteIcon
-                onClick={() => dispatch(deleteMoviesFavorite(props.imdbID))}
+                
               />
             </IconButton>
           )}

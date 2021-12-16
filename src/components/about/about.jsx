@@ -10,7 +10,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Foto from "../../imagenes/miFOto.jpeg";
 export default function About(props) {
-    props.setTitulo("ABOUT ME");
+    // props.setTitulo("ABOUT ME");
   return (
     <div>
       <Stack
@@ -39,17 +39,17 @@ export default function About(props) {
           <ul className='social-icons'>
             <li>
               <a target='_blank' href='https://www.instagram.com/teodellacqua/'>
-              <i class="fab fa-instagram"><FontAwesomeIcon icon={faInstagram} /></i>
+              <i className="fab fa-instagram"><FontAwesomeIcon icon={faInstagram} /></i>
               </a>
             </li>
             <li>
               <a target='_blank' href='https://www.linkedin.com/in/mateo-dellacqua-castro/'>
-              <i class="fab fa-linkedin-in"> <FontAwesomeIcon icon={faLinkedin} /></i>
+              <i className="fab fa-linkedin-in"> <FontAwesomeIcon icon={faLinkedin} /></i>
               </a>
             </li>
             <li>
               <a target='_blank' href='https://github.com/teodc888'>
-              <i class="fab fa-github"> <FontAwesomeIcon icon={faGithub} /> </i>
+              <i className="fab fa-github"> <FontAwesomeIcon icon={faGithub} /> </i>
               </a>
             </li>
           </ul>

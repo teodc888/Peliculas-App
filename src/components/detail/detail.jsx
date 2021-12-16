@@ -22,7 +22,7 @@ export default function Detail(props) {
   }, [dispatch, id]);
 
   const movie = useSelector((state) => state.movie);
-  props.setTitulo(movie.Title);
+  // props.setTitulo(movie.Title);
 
   return (
     <div>
@@ -55,7 +55,7 @@ export default function Detail(props) {
                 <Typography gutterBottom variant="h5" component="div">
                   <Rating
                     name="half-rating"
-                    defaultValue={movie.imdbRating}
+                    defaultValue={5}
                     precision={0.2}
                     max={10}
                     size="large"

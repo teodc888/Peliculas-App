@@ -1,4 +1,4 @@
-PELICULAS APP ⛈️
+PELICULAS APP 
 <p alaign="right">
   <img height="200" src="https://i.blogs.es/aa91a3/cine-/1366_2000.jpg" />
 </p>

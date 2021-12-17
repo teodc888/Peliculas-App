@@ -45,9 +45,6 @@ export default function NavBar(props) {
             </Link> :
             props.titulo
             }
-            {/* <Link to="/about">
-            DELLACQUA MOVIES
-            </Link>  */}
           </Typography>
           <IconButton
             size="large"

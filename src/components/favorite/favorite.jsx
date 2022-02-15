@@ -6,10 +6,10 @@ import Box from "@mui/material/Box";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { deleteAllFavorite } from "../../redux/actions/index";
-export default function Favorite(props) {
+export default function Favorite() {
   const dispatch = useDispatch();
   const moviesFavorite = useSelector((state) => state.moviesFavorite);
-   props.MTitulo("FAVORITE MOVIES");
+
 
  const deleteAll = () => {
     dispatch(deleteAllFavorite());

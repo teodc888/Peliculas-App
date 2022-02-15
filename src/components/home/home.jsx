@@ -5,10 +5,9 @@ import SearchBar from "../searchBar/searchBar";
 import CardMovies from "../cardMovies/cardMovies";
 import { useSelector } from "react-redux";
 import Stack from "@mui/material/Stack";
-export default function Home(props) {
+export default function Home() {
   const movies = useSelector((state) => state.movies);
-  props.MTitulo("DELLACQUA MOVIES");
-
+  
   return (
     <div>
       <div>
@@ -39,6 +38,8 @@ export default function Home(props) {
                 <img width="300" src="https://media2.giphy.com/media/YyKPbc5OOTSQE/giphy.gif?cid=ecf05e47rmbcqad11nefzwy06912qn1ao5rgt230zmwisl15&rid=giphy.gif&ct=g" alt="error" />
               </Grid>
             ) : (
+              movies.length !== 0 &&
+              movies.Search.length > 0 &&
               movies.Search.map((movie) => {
 
                 return (

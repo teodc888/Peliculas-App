@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Rating from "@mui/material/Rating";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-export default function Detail(props) {
+export default function Detail() {
   const [time, setTime] = useState(false);
   const dispatch = useDispatch();
   const { id } = useParams();
@@ -22,7 +22,7 @@ export default function Detail(props) {
   }, [dispatch, id]);
 
   const movie = useSelector((state) => state.movie);
-   props.MTitulo(movie.Title)
+
 
   return (
     <div>

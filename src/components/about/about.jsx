@@ -9,8 +9,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Foto from "../../imagenes/miFOto.jpeg";
-export default function About(props) {
-    props.MTitulo("ABOUT ME");
+export default function About() {
   return (
     <div>
       <Stack

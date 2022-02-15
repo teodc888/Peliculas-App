@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 import { styled } from "@mui/material/styles";
 import Badge from "@mui/material/Badge";
 import { Link } from "react-router-dom";
-export default function NavBar(props) {
+export default function NavBar() {
   const moviesFavorite = useSelector((state) => state.moviesFavorite);
 
   const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -38,13 +38,10 @@ export default function NavBar(props) {
             </Link>
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, textDecoration:"none" }}>
-            {
-            props.titulo === "DELLACQUA MOVIES" ?
-            <Link to="/about">
-              {props.titulo}
-            </Link> :
-            props.titulo
-            }
+          <Link to="/about">
+            DELLACQUA MOVIES
+          </Link>
+ 
           </Typography>
           <IconButton
             size="large"

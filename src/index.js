@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 // import dotenv from "dotenv";
 const { persistor, store } = Store;
 // dotenv.config();
-//persistor.purge();
+// persistor.purge();
 
 ReactDOM.render(
 <Provider store={store}>
